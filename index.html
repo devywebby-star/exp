@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RawLink Market</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">RawLink</div>
+    <nav class="nav-icons">
+      <a class="nav-icon" href="index.html"><span>🏠</span>Home</a>
+      <a class="nav-icon" href="info.html"><span>ℹ️</span>Information</a>
+      <a class="nav-icon" href="cart.html"><span>🛒</span>Cart</a>
+      <a class="nav-icon" href="profile.html"><span>👤</span>Profile</a>
+    </nav>
+  </header>
+  <header class="hero">
+    <nav class="nav">
+      <div class="logo">RawLink</div>
+      <div class="nav-links">
+        <a href="listings.html">Marketplace</a>
+        <a href="about.html">About</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="login.html">Login</a>
+      </div>
+      <button class="cta">Get Started</button>
+    </nav>
+    <div class="hero-content">
+      <div>
+        <p class="badge">Connecting buyers & sellers of raw materials</p>
+        <h1>Source reliable raw materials in minutes.</h1>
+        <p class="subtext">Publish listings, compare offers, and negotiate directly in a transparent marketplace built for metals, plastics, textiles, and more.</p>
+        <div class="hero-actions">
+          <button class="primary">Browse Listings</button>
+          <button class="secondary">Post Supply</button>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <span class="stat">1,240+</span>
+            <span class="stat-label">Active buyers</span>
+          </div>
+          <div>
+            <span class="stat">860+</span>
+            <span class="stat-label">Verified sellers</span>
+          </div>
+          <div>
+            <span class="stat">98%</span>
+            <span class="stat-label">Match success</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h3>Quick Match</h3>
+        <p>Tell us what you need and get offers within hours.</p>
+        <form id="quickMatchForm">
+          <label>
+            Material
+            <input type="text" name="material" placeholder="Copper cathode" required />
+          </label>
+          <label>
+            Quantity
+            <input type="text" name="quantity" placeholder="50 metric tons" required />
+          </label>
+          <label>
+            Location
+            <input type="text" name="location" placeholder="Lagos, NG" required />
+          </label>
+          <button type="submit">Request Quotes</button>
+        </form>
+        <p class="helper">We only share details with verified suppliers.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="market" class="marketplace">
+      <div class="section-heading">
+        <h2>Marketplace listings</h2>
+        <p>Filter by buyer needs or supplier offers to connect instantly.</p>
+      </div>
+      <div class="filters">
+        <div class="filter-group">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="buyer">Buyers</button>
+          <button class="filter" data-filter="seller">Sellers</button>
+        </div>
+        <div class="search-box">
+          <input id="searchInput" type="search" placeholder="Search material or location" />
+        </div>
+      </div>
+      <div id="listingGrid" class="listing-grid"></div>
+    </section>
+
+    <section id="how" class="how-it-works">
+      <div class="section-heading">
+        <h2>How RawLink works</h2>
+      </div>
+      <div class="steps">
+        <div class="step-card">
+          <span>1</span>
+          <h3>Create your profile</h3>
+          <p>Verify your company credentials so others can trade confidently.</p>
+        </div>
+        <div class="step-card">
+          <span>2</span>
+          <h3>Post supply or demand</h3>
+          <p>Share specifications, certifications, and delivery timelines.</p>
+        </div>
+        <div class="step-card">
+          <span>3</span>
+          <h3>Negotiate securely</h3>
+          <p>Chat in-platform, compare offers, and close deals faster.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="post" class="post-listing">
+      <div class="section-heading">
+        <h2>Post a listing</h2>
+        <p>Let buyers and sellers find you. Add a new listing below.</p>
+      </div>
+      <form id="listingForm" class="listing-form">
+        <label>
+          Listing type
+          <select name="type" required>
+            <option value="buyer">Buyer (demand)</option>
+            <option value="seller">Seller (supply)</option>
+          </select>
+        </label>
+        <label>
+          Company name
+          <input type="text" name="company" placeholder="Apex Manufacturing" required />
+        </label>
+        <label>
+          Material
+          <input type="text" name="material" placeholder="Recycled PET flakes" required />
+        </label>
+        <label>
+          Quantity
+          <input type="text" name="quantity" placeholder="100 MT monthly" required />
+        </label>
+        <label>
+          Location
+          <input type="text" name="location" placeholder="Bandung, ID" required />
+        </label>
+        <label>
+          Notes
+          <textarea name="notes" rows="3" placeholder="Certifications, delivery window, pricing terms"></textarea>
+        </label>
+        <button type="submit">Publish listing</button>
+      </form>
+      <p class="helper">New listings appear in the marketplace instantly.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <h4>RawLink Market</h4>
+      <p>Connecting industrial buyers and suppliers with verified raw material listings.</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>Email: hello@rawlink.example</p>
+      <p>Phone: +1 (555) 014-7890</p>
+    </div>
+    <div>
+      <h4>Coverage</h4>
+      <p>Metals · Plastics · Textiles · Chemicals · Agriculture</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
