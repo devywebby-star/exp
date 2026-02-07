@@ -23,27 +23,50 @@
   </section>
 
   <section class="page-content">
-    <div class="login-panel">
-      <form>
-        <label>
-          Work email
-          <input type="email" placeholder="name@company.com" required />
-        </label>
-        <label>
-          Password
-          <input type="password" placeholder="••••••••" required />
-        </label>
-        <label>
-          Company role
-          <select>
-            <option>Buyer / Procurement</option>
-            <option>Seller / Supply</option>
-            <option>Logistics / Operations</option>
-          </select>
-        </label>
-        <button type="submit">Sign in</button>
-      </form>
-      <p class="helper">Need access? Contact your RawLink administrator.</p>
+    <div class="card-grid">
+      <div class="login-panel">
+        <h2>Sign in</h2>
+        <form id="loginForm">
+          <label>
+            Work email
+            <input type="email" name="email" placeholder="name@company.com" required />
+          </label>
+          <label>
+            Password
+            <input type="password" name="password" placeholder="••••••••" required />
+          </label>
+          <button type="submit">Sign in</button>
+        </form>
+        <p class="helper">Use your verified company email to continue.</p>
+      </div>
+
+      <div class="login-panel">
+        <h2>Create an account</h2>
+        <form id="signupForm">
+          <label>
+            Company name
+            <input type="text" name="company" placeholder="Global Metals Ltd." required />
+          </label>
+          <label>
+            Work email
+            <input type="email" name="email" placeholder="name@company.com" required />
+          </label>
+          <label>
+            Password
+            <input type="password" name="password" placeholder="Create a secure password" required />
+          </label>
+          <label>
+            Company role
+            <select name="role">
+              <option>Buyer / Procurement</option>
+              <option>Seller / Supply</option>
+              <option>Logistics / Operations</option>
+            </select>
+          </label>
+          <button type="submit">Create account</button>
+        </form>
+        <p class="helper">We will verify your company details before activation.</p>
+      </div>
     </div>
   </section>
 
@@ -62,5 +85,7 @@
       <p>Metals · Plastics · Textiles · Chemicals · Agriculture</p>
     </div>
   </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
