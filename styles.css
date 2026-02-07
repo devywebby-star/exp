@@ -1,15 +1,15 @@
 :root {
   color-scheme: light;
-  --primary: #4b7a5e;
-  --primary-dark: #2f5742;
-  --secondary: #1f3326;
-  --muted: #4f6b58;
-  --bg: #e3efe6;
+  --primary: #a5c89e;
+  --primary-dark: #7aa67c;
+  --secondary: #2c3f33;
+  --muted: #556b5a;
+  --bg: #edf4ee;
   --card: #ffffff;
-  --border: #a5c7b2;
-  --success: #3e7b5b;
-  --warning: #7aa57f;
-  --accent: #8fc4a3;
+  --border: #bfd8c2;
+  --success: #6fa77b;
+  --warning: #8eb596;
+  --accent: #a5c89e;
 }
 
 * {
@@ -26,7 +26,7 @@ body {
 }
 
 .hero {
-  background: linear-gradient(120deg, rgba(79, 122, 96, 0.35), rgba(227, 239, 230, 0));
+  background: linear-gradient(120deg, rgba(165, 200, 158, 0.45), rgba(237, 244, 238, 0));
   padding: 2.5rem 8vw 4rem;
 }
 
@@ -44,8 +44,8 @@ body {
   justify-content: space-between;
   gap: 2rem;
   padding: 1.5rem 8vw;
-  background: rgba(227, 239, 230, 0.9);
-  border-bottom: 1px solid rgba(165, 199, 178, 0.7);
+  background: rgba(237, 244, 238, 0.92);
+  border-bottom: 1px solid rgba(191, 216, 194, 0.8);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -113,7 +113,7 @@ body {
 .badge {
   display: inline-flex;
   padding: 0.35rem 0.8rem;
-  background: rgba(143, 196, 163, 0.35);
+  background: rgba(165, 200, 158, 0.45);
   border-radius: 999px;
   font-weight: 600;
   color: var(--secondary);
@@ -180,8 +180,8 @@ h1 {
   background: var(--card);
   border-radius: 1rem;
   padding: 2rem;
-  box-shadow: 0 20px 40px rgba(31, 51, 38, 0.18);
-  border: 1px solid rgba(165, 199, 178, 0.7);
+  box-shadow: 0 20px 40px rgba(44, 63, 51, 0.16);
+  border: 1px solid rgba(191, 216, 194, 0.8);
 }
 
 .hero-card form {
@@ -224,7 +224,7 @@ main {
 
 .page-hero {
   padding: 2.5rem 8vw 2rem;
-  background: linear-gradient(120deg, rgba(79, 122, 96, 0.25), rgba(227, 239, 230, 0));
+  background: linear-gradient(120deg, rgba(165, 200, 158, 0.35), rgba(237, 244, 238, 0));
 }
 
 .page-hero h1 {
@@ -248,7 +248,7 @@ main {
   border-radius: 1rem;
   padding: 1.5rem;
   border: 1px solid var(--border);
-  box-shadow: 0 12px 24px rgba(31, 51, 38, 0.12);
+  box-shadow: 0 12px 24px rgba(44, 63, 51, 0.12);
 }
 
 .login-panel {
@@ -257,7 +257,7 @@ main {
   padding: 2rem;
   border-radius: 1.5rem;
   border: 1px solid var(--border);
-  box-shadow: 0 16px 32px rgba(31, 51, 38, 0.12);
+  box-shadow: 0 16px 32px rgba(44, 63, 51, 0.12);
 }
 
 .login-panel form {
@@ -281,7 +281,7 @@ main {
   border-radius: 1rem;
   padding: 1.5rem;
   border: 1px solid var(--border);
-  box-shadow: 0 12px 24px rgba(31, 51, 38, 0.12);
+  box-shadow: 0 12px 24px rgba(44, 63, 51, 0.12);
 }
 
 .metric-card h3 {
@@ -373,7 +373,7 @@ main {
   border: 1px solid var(--border);
   display: grid;
   gap: 0.8rem;
-  box-shadow: 0 12px 24px rgba(31, 51, 38, 0.12);
+  box-shadow: 0 12px 24px rgba(44, 63, 51, 0.12);
 }
 
 .listing-card .tag {
@@ -389,12 +389,12 @@ main {
 }
 
 .tag.buyer {
-  background: rgba(122, 165, 127, 0.22);
+  background: rgba(165, 200, 158, 0.3);
   color: var(--warning);
 }
 
 .tag.seller {
-  background: rgba(143, 196, 163, 0.35);
+  background: rgba(165, 200, 158, 0.4);
   color: var(--success);
 }
 
@@ -427,8 +427,8 @@ main {
   background: #fff;
   border-radius: 1.5rem;
   padding: 2rem 3vw;
-  box-shadow: 0 16px 40px rgba(31, 51, 38, 0.12);
-  border: 1px solid rgba(165, 199, 178, 0.7);
+  box-shadow: 0 16px 40px rgba(44, 63, 51, 0.12);
+  border: 1px solid rgba(191, 216, 194, 0.8);
 }
 
 .steps {
@@ -438,10 +438,10 @@ main {
 }
 
 .step-card {
-  background: rgba(227, 239, 230, 0.8);
+  background: rgba(237, 244, 238, 0.9);
   padding: 1.5rem;
   border-radius: 1rem;
-  border: 1px solid rgba(165, 199, 178, 0.6);
+  border: 1px solid rgba(191, 216, 194, 0.7);
 }
 
 .step-card span {
@@ -468,7 +468,7 @@ main {
   border-radius: 1.5rem;
   padding: 2rem;
   border: 1px solid var(--border);
-  box-shadow: 0 16px 32px rgba(31, 51, 38, 0.12);
+  box-shadow: 0 16px 32px rgba(44, 63, 51, 0.12);
 }
 
 .footer {
@@ -476,8 +476,8 @@ main {
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding: 3rem 8vw;
-  background: #1f3326;
-  color: #e3efe6;
+  background: #2c3f33;
+  color: #edf4ee;
 }
 
 .footer h4 {
