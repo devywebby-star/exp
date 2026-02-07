@@ -1,14 +1,14 @@
 :root {
   color-scheme: light;
   --primary: #a5c89e;
-  --primary-dark: #7aa67c;
-  --secondary: #2c3f33;
-  --muted: #556b5a;
-  --bg: #edf4ee;
+  --primary-dark: #6f9b74;
+  --secondary: #214033;
+  --muted: #4f6f5a;
+  --bg: #dfeee4;
   --card: #ffffff;
-  --border: #bfd8c2;
-  --success: #6fa77b;
-  --warning: #8eb596;
+  --border: #a5c89e;
+  --success: #5c9b70;
+  --warning: #7eb28a;
   --accent: #a5c89e;
 }
 
@@ -25,8 +25,13 @@ body {
   line-height: 1.6;
 }
 
+main {
+  background: rgba(165, 200, 158, 0.12);
+  border-radius: 2rem 2rem 0 0;
+}
+
 .hero {
-  background: linear-gradient(120deg, rgba(165, 200, 158, 0.45), rgba(237, 244, 238, 0));
+  background: linear-gradient(120deg, rgba(165, 200, 158, 0.65), rgba(223, 238, 228, 0.05));
   padding: 2.5rem 8vw 4rem;
 }
 
@@ -44,8 +49,8 @@ body {
   justify-content: space-between;
   gap: 2rem;
   padding: 1.5rem 8vw;
-  background: rgba(237, 244, 238, 0.92);
-  border-bottom: 1px solid rgba(191, 216, 194, 0.8);
+  background: rgba(223, 238, 228, 0.96);
+  border-bottom: 1px solid rgba(165, 200, 158, 0.7);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -68,8 +73,8 @@ body {
   text-decoration: none;
   color: var(--secondary);
   font-weight: 600;
-  background: #fff;
-  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(165, 200, 158, 0.8);
 }
 
 .nav-icon span {
@@ -97,7 +102,7 @@ body {
 .cta {
   padding: 0.65rem 1.4rem;
   border-radius: 999px;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--primary-dark);
   background: transparent;
   color: var(--primary);
   font-weight: 600;
@@ -113,7 +118,7 @@ body {
 .badge {
   display: inline-flex;
   padding: 0.35rem 0.8rem;
-  background: rgba(165, 200, 158, 0.45);
+  background: rgba(165, 200, 158, 0.6);
   border-radius: 999px;
   font-weight: 600;
   color: var(--secondary);
@@ -154,8 +159,8 @@ h1 {
 }
 
 .secondary {
-  background: #fff;
-  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(165, 200, 158, 0.8);
   color: var(--secondary);
 }
 
@@ -180,8 +185,8 @@ h1 {
   background: var(--card);
   border-radius: 1rem;
   padding: 2rem;
-  box-shadow: 0 20px 40px rgba(44, 63, 51, 0.16);
-  border: 1px solid rgba(191, 216, 194, 0.8);
+  box-shadow: 0 20px 40px rgba(33, 64, 51, 0.18);
+  border: 1px solid rgba(165, 200, 158, 0.85);
 }
 
 .hero-card form {
@@ -224,7 +229,7 @@ main {
 
 .page-hero {
   padding: 2.5rem 8vw 2rem;
-  background: linear-gradient(120deg, rgba(165, 200, 158, 0.35), rgba(237, 244, 238, 0));
+  background: linear-gradient(120deg, rgba(165, 200, 158, 0.55), rgba(223, 238, 228, 0.08));
 }
 
 .page-hero h1 {
@@ -247,8 +252,8 @@ main {
   background: #fff;
   border-radius: 1rem;
   padding: 1.5rem;
-  border: 1px solid var(--border);
-  box-shadow: 0 12px 24px rgba(44, 63, 51, 0.12);
+  border: 1px solid rgba(165, 200, 158, 0.8);
+  box-shadow: 0 12px 24px rgba(33, 64, 51, 0.12);
 }
 
 .login-panel {
@@ -256,8 +261,8 @@ main {
   background: #fff;
   padding: 2rem;
   border-radius: 1.5rem;
-  border: 1px solid var(--border);
-  box-shadow: 0 16px 32px rgba(44, 63, 51, 0.12);
+  border: 1px solid rgba(165, 200, 158, 0.8);
+  box-shadow: 0 16px 32px rgba(33, 64, 51, 0.14);
 }
 
 .login-panel form {
@@ -280,8 +285,8 @@ main {
   background: #fff;
   border-radius: 1rem;
   padding: 1.5rem;
-  border: 1px solid var(--border);
-  box-shadow: 0 12px 24px rgba(44, 63, 51, 0.12);
+  border: 1px solid rgba(165, 200, 158, 0.8);
+  box-shadow: 0 12px 24px rgba(33, 64, 51, 0.12);
 }
 
 .metric-card h3 {
@@ -305,7 +310,7 @@ main {
   height: 80px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid var(--border);
+  border: 2px solid rgba(165, 200, 158, 0.9);
 }
 
 .profile-meta {
@@ -341,10 +346,10 @@ main {
 }
 
 .filter {
-  border: 1px solid var(--border);
+  border: 1px solid rgba(165, 200, 158, 0.8);
   padding: 0.5rem 1.1rem;
   border-radius: 999px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.95);
   cursor: pointer;
   font-weight: 600;
   color: var(--muted);
@@ -352,7 +357,7 @@ main {
 
 .filter.active {
   background: var(--primary);
-  color: #2f3c1d;
+  color: #214033;
   border-color: transparent;
 }
 
@@ -370,10 +375,10 @@ main {
   background: var(--card);
   border-radius: 1rem;
   padding: 1.5rem;
-  border: 1px solid var(--border);
+  border: 1px solid rgba(165, 200, 158, 0.8);
   display: grid;
   gap: 0.8rem;
-  box-shadow: 0 12px 24px rgba(44, 63, 51, 0.12);
+  box-shadow: 0 12px 24px rgba(33, 64, 51, 0.12);
 }
 
 .listing-card .tag {
@@ -389,12 +394,12 @@ main {
 }
 
 .tag.buyer {
-  background: rgba(165, 200, 158, 0.3);
+  background: rgba(165, 200, 158, 0.5);
   color: var(--warning);
 }
 
 .tag.seller {
-  background: rgba(165, 200, 158, 0.4);
+  background: rgba(165, 200, 158, 0.6);
   color: var(--success);
 }
 
@@ -427,8 +432,8 @@ main {
   background: #fff;
   border-radius: 1.5rem;
   padding: 2rem 3vw;
-  box-shadow: 0 16px 40px rgba(44, 63, 51, 0.12);
-  border: 1px solid rgba(191, 216, 194, 0.8);
+  box-shadow: 0 16px 40px rgba(33, 64, 51, 0.14);
+  border: 1px solid rgba(165, 200, 158, 0.85);
 }
 
 .steps {
@@ -438,10 +443,10 @@ main {
 }
 
 .step-card {
-  background: rgba(237, 244, 238, 0.9);
+  background: rgba(223, 238, 228, 0.95);
   padding: 1.5rem;
   border-radius: 1rem;
-  border: 1px solid rgba(191, 216, 194, 0.7);
+  border: 1px solid rgba(165, 200, 158, 0.8);
 }
 
 .step-card span {
@@ -467,8 +472,8 @@ main {
   background: #fff;
   border-radius: 1.5rem;
   padding: 2rem;
-  border: 1px solid var(--border);
-  box-shadow: 0 16px 32px rgba(44, 63, 51, 0.12);
+  border: 1px solid rgba(165, 200, 158, 0.8);
+  box-shadow: 0 16px 32px rgba(33, 64, 51, 0.14);
 }
 
 .footer {
@@ -476,8 +481,8 @@ main {
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding: 3rem 8vw;
-  background: #2c3f33;
-  color: #edf4ee;
+  background: #214033;
+  color: #dfeee4;
 }
 
 .footer h4 {
