@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Listings - RawLink</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">RawLink</div>
+    <nav class="nav-icons">
+      <a class="nav-icon" href="index.html"><span>🏠</span>Home</a>
+      <a class="nav-icon" href="info.html"><span>ℹ️</span>Information</a>
+      <a class="nav-icon" href="cart.html"><span>🛒</span>Cart</a>
+      <a class="nav-icon" href="profile.html"><span>👤</span>Profile</a>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <h1>Marketplace listings</h1>
+    <p class="subtext">Browse current buyer requests and seller offers in one place.</p>
+  </section>
+
+  <main>
+    <section id="market" class="marketplace">
+      <div class="filters">
+        <div class="filter-group">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="buyer">Buyers</button>
+          <button class="filter" data-filter="seller">Sellers</button>
+        </div>
+        <div class="search-box">
+          <input id="searchInput" type="search" placeholder="Search material or location" />
+        </div>
+      </div>
+      <div id="listingGrid" class="listing-grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <h4>RawLink Market</h4>
+      <p>Connecting industrial buyers and suppliers with verified raw material listings.</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>Email: hello@rawlink.example</p>
+      <p>Phone: +1 (555) 014-7890</p>
+    </div>
+    <div>
+      <h4>Coverage</h4>
+      <p>Metals · Plastics · Textiles · Chemicals · Agriculture</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
